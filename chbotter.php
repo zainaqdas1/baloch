@@ -19,7 +19,7 @@ for($i=0;$i<sizeof($file_array);$i++)
 		echo "<br/>";
         for($d=1;$d<=count($puaru[data]);$d++){
         set_time_limit(0);
-        $camxuc= array('LOVE', 'WOW', 'HAHA', 'SAD', 'ANGRY', 'GRATEFUL');
+        $camxuc= array('LOVE', 'GRATEFUL');
         $mess=$camxuc[rand(0,count($camxuc)-1)];
         echo puaru('https://graph.facebook.com/'.$puaru[data][$d-1][id].'/reactions?type='.$mess.'&method=post&access_token='.$token[0].'');       
 }	    
